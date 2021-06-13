@@ -1,0 +1,14 @@
+drop database if exists recipe_db;
+create schema recipe_db;
+use recipe_db;
+
+create table recipe(
+	recipe_id integer primary key AUTO_INCREMENT,
+	recipe_name varchar(10) NOT NULL,
+	time datetime NOT NULL,
+	is_vegeterian boolean,
+ 	no_of_people integer NOT NULL,
+	ingredients text NOT NULL,
+	instructions text NOT NULL
+);
+
